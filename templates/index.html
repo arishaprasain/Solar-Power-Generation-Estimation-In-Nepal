@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nepal Climate Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>Nepal Climate Data</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left-half">
+            <div class="select-district">
+                <h2>Select District</h2>
+                <form action="{{ url_for('process_data') }}" method="post">
+                    <select id="districts" name="district" style="width: 100%;">
+                        <option value="default" selected disabled>Select District</option>
+                    </select>
+                    <button type="submit" style="margin-top: 10px;">Estimate</button>
+                </form>
+            </div>
+
+            <div class="predictions">
+                <h2>Predictions</h2>
+                <p>{{prediction}} KW</p>
+              
+                <!-- Add more predictions as needed -->
+            </div>
+
+        </div>
+
+        <div class="right-half">
+            <div class="district-info">
+                <h2>District Information</h2>
+                <p>District Name: {{district}}</p>
+                <p>Longitude: {{longitude}}</p>
+                <p>Latitude: {{latitude}} </p>
+                <!-- Add more district info as needed -->
+            </div>
+            <div class="climate-data">
+                <h2>Climate Data</h2>
+                <p>Temperature: <span id="temperature">{{temperature}}</span></p>
+                <p>Humidity: <span id="humidity">{{humidity}}</span></p>
+                <p>Pressure: <span id="pressure">{{pressure}}</span></p>
+                <p>Precipitation: <span id="prec">{{prec}}</span></p>
+                <p>Snowfall: <span id="snowfall">{{snowfall}}</span></p>
+                <p>Total cloud coverage: <span id="total_cloud_cover">{{total_cloud_cover}}</span></p>
+                <p>High cloud coverage: <span id="high_cloud_cover">{{high_cloud_cover}}</span></p>
+                <p>Mid cloud coverage: <span id="mid_cloud_cover">{{mid_cloud_cover}}</span></p>
+                <p>Low cloud coverage: <span id="low_cloud_cover">{{low_cloud_cover}}</span></p>
+                <p>Shortwave Radiation: <span id="shortwave_radiation">{{shortwave_radiation}}</span></p>
+                <p>Radiation Angle: <span id="angle">{{angle}}</span></p>
+                <p>Zenith: <span id="zenith">{{zenith}}</span></p>
+                <p>Azimuth: <span id="azimuth">{{azimuth}}</span></p>
+            </div>
+        </div>
+
+    </div>
+   
+    <script src="/static/js/populateDistricts.js"></script>
+    
+</body>
+</html>

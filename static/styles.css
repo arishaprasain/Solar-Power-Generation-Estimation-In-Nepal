@@ -1,0 +1,151 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  
+  body {
+    font-family: Arial, sans-serif;
+   
+    background-color: rgba(124, 116, 116, 0.9);
+    background-image: url('img/nuwakot.jpeg'); /* Replace 'your-image.jpg' with your image path */
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  }
+
+  /* Navigation styles */
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  nav h1 {
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Main content styles */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  /* Apply gradient across both left and right halves */
+.left-half,
+.right-half {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(to right, #ffdb58, #ffd700); /* Uniform yellow gradient */
+}
+  
+  .select-district {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .select-district select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .select-district button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px; /* Space between button and other blocks */
+  }
+  
+  .predictions {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between predictions and other blocks */
+  }
+  
+  .predictions h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .predictions p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .right-half h2 {
+    margin-bottom: 10px;
+  }
+  
+/* District Info block */
+.district-info {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .district-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .district-info p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  /* Climate Data block */
+  .climate-data {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .climate-data h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .climate-data p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
