@@ -1,5 +1,16 @@
+# Unlocking Nepal's Solar Potential: A Machine Learning Approach to District-Wise Power Prediction
 
-**Unlocking Nepal's Solar Potential: A Machine Learning Approach to District-Wise Power Prediction**
+ **Tools and Libraries Used**
+
+- Python 3.
+- ML libraries
+- Flask
+- Excel
+
+
+
+#
+
 
 
  **Introduction:**
@@ -23,7 +34,7 @@ Solar power, with its 100 times greater potential compared to water resources, p
 
 
 
-
+#
 **Our Project: Predictive Power Generation Modeling**
 Our project focuses on building a machine learning model to predict the total power that can be generated from solar sources in each district. The predictive model takes into account various factors, including geographical features, weather patterns, and historical solar irradiance data. By leveraging machine learning algorithms, we aim to provide accurate and dynamic forecasts for solar power generation potential.
 
@@ -50,3 +61,27 @@ We are developing a user-friendly web app. The app allows users to explore distr
 Diversification of Energy Sources: Our project promotes a diversified energy portfolio by unlocking the vast potential of solar power.
 Increased Energy Security: By reducing dependence on a single energy source, Nepal can enhance its energy security and resilience.
 Environmental Sustainability: Solar power is a clean and renewable energy source, contributing to the country's commitment to environmental sustainability.
+
+
+
+
+
+#
+
+
+**Data Source**
+
+-https://power.larc.nasa.gov/data-access-viewer/
+
+#
+
+**Contributors**
+
+Arisha Prasain
+
+
+Ayush Adhikari
+
+
+
+
