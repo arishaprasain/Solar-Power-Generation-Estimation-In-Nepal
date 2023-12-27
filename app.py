@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import pandas as pd
 
 df = pd.read_excel('data/Prediction.xlsx')
-data = pd.read_excel('data/second.xlsx')
+data = pd.read_excel('data/third.xlsx')
 
 
 app = Flask(__name__)
@@ -27,16 +27,19 @@ def process_data():
                            temperature = new_data.iloc[:,3].iloc[0],
                            humidity = new_data.iloc[:,4].iloc[0],
                            pressure = new_data.iloc[:,5].iloc[0],
-                           prec = new_data.iloc[:,6].iloc[0],
-                           snowfall = new_data.iloc[:,7].iloc[0],
-                           total_cloud_cover = new_data.iloc[:,7].iloc[0],
-                           high_cloud_cover = new_data.iloc[:,8].iloc[0],
-                           med_cloud_cover = new_data.iloc[:,9].iloc[0],
-                           low_cloud_cover = new_data.iloc[:,10].iloc[0],
-                           shortwave_radiation = new_data.iloc[:,11].iloc[0],
-                           angle = new_data.iloc[:,12].iloc[0],
-                           zenith = new_data.iloc[:, 13].iloc[0],
-                           azimuth = new_data.iloc[:,14].iloc[0])
+                           shortwave_radiation = new_data.iloc[:,6].iloc[0],
+                           wind_speed_10m = new_data.iloc[:,7].iloc[0],
+                           wind_direction_10m = new_data.iloc[:,8].iloc[0],
+                           wind_speed_80m = new_data.iloc[:,9].iloc[0],
+                           wind_direction_80m = new_data.iloc[:,10].iloc[0],
+                           wind_speed_900mb = new_data.iloc[:,11].iloc[0],
+                           wind_direction_900mb = new_data.iloc[:,12].iloc[0],
+                            wind_gust_10m = new_data.iloc[:,13].iloc[0],
+
+
+                           angle = new_data.iloc[:,14].iloc[0],
+                           zenith = new_data.iloc[:, 15].iloc[0],
+                           azimuth = new_data.iloc[:,16].iloc[0])
 
 
 

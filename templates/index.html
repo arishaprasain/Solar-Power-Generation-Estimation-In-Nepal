@@ -8,7 +8,7 @@
 <body>
     <nav>
         <div class="container">
-            <h1>Nepal Climate Data</h1>
+            <h1>Solar Planning</h1>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -32,8 +32,12 @@
             <div class="predictions">
                 <h2>Predictions</h2>
                 <p>{{prediction}} KW</p>
-              
-                <!-- Add more predictions as needed -->
+                <p>Important Note:
+                    The power estimation provided by our machine learning model is an estimate based on various factors, including geographical data, weather patterns, and historical solar irradiance. It is important to acknowledge that, like any predictive model, the accuracy of the estimation may be subject to certain limitations and uncertainties.</p>
+                <p>Use as a Reference:
+
+                    The power estimation provided should be considered as a reference or approximation. It is not intended to replace professional advice or detailed site assessments. For critical decision-making processes, we recommend consulting with experts in the field and conducting on-site evaluations.</p>
+               
             </div>
 
         </div>
@@ -44,20 +48,21 @@
                 <p>District Name: {{district}}</p>
                 <p>Longitude: {{longitude}}</p>
                 <p>Latitude: {{latitude}} </p>
-                <!-- Add more district info as needed -->
+                
             </div>
             <div class="climate-data">
-                <h2>Climate Data</h2>
+                <h2>Parameters</h2>
                 <p>Temperature: <span id="temperature">{{temperature}}</span></p>
                 <p>Humidity: <span id="humidity">{{humidity}}</span></p>
                 <p>Pressure: <span id="pressure">{{pressure}}</span></p>
-                <p>Precipitation: <span id="prec">{{prec}}</span></p>
-                <p>Snowfall: <span id="snowfall">{{snowfall}}</span></p>
-                <p>Total cloud coverage: <span id="total_cloud_cover">{{total_cloud_cover}}</span></p>
-                <p>High cloud coverage: <span id="high_cloud_cover">{{high_cloud_cover}}</span></p>
-                <p>Mid cloud coverage: <span id="mid_cloud_cover">{{mid_cloud_cover}}</span></p>
-                <p>Low cloud coverage: <span id="low_cloud_cover">{{low_cloud_cover}}</span></p>
                 <p>Shortwave Radiation: <span id="shortwave_radiation">{{shortwave_radiation}}</span></p>
+                <p>Wind Speed at 10m: <span id="wind_speed_10m">{{wind_speed_10m}}</span></p>
+                <p>Wind direction at 10m: <span id="wind_direction_10m">{{wind_direction_10m}}</span></p>
+                <p>Wind speed at 80m: <span id="wind_speed_80m">{{wind_speed_80m}}</span></p>
+                <p>wind direction at 80m: <span id="wind_direction_80m">{{wind_direction_80m}}</span></p>
+                <p>wind speed at 900mb: <span id="wind_speed_900mb">{{wind_speed_900mb}}</span></p>
+                <p>wind direction at 900mb: <span id="wind_direction_900mb">{{wind_direction_900mb}}</span></p>
+                <p>wind gust at 10m: <span id="wind_gust_10m">{{wind_gust_10m}}</span></p>
                 <p>Radiation Angle: <span id="angle">{{angle}}</span></p>
                 <p>Zenith: <span id="zenith">{{zenith}}</span></p>
                 <p>Azimuth: <span id="azimuth">{{azimuth}}</span></p>
@@ -67,6 +72,6 @@
     </div>
    
     <script src="/static/js/populateDistricts.js"></script>
-    
+
 </body>
 </html>
